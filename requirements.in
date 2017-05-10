@@ -1,0 +1,6 @@
+argon2-cffi
+channels
+django
+pip-tools
+psycopg2
+requests

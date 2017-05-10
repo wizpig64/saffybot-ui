@@ -1,0 +1,14 @@
+SaffyBot-UI
+===========
+
+A twitch bot web interface and worker wrangler.
+
+
+Requirements
+------------
+
+This is a small personal side project, so I'm not aiming for maximum compatibility.
+Python 3.6 isn't currently available for Debian, but Ubuntu users can install it using a PPA.
+
+- Python 3.6+ (f-strings, pathlib)
+- PostgreSQL (django.contrib.postgres)
