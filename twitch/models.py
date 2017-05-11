@@ -25,7 +25,7 @@ class CommandQuerySet(models.QuerySet):
         # to respond with a random choice, just make multiple commands, and we'll randomly pick one.
         # todo: this is probably really slow, better ways to go about it.
         for command in self.order_by('?'):
-            if re.compile(command.pattern).match(message):
+            if re.match(command.pattern, message, flags=re.IGNORECASE):
                 return command.render(**kwargs)
 
 
