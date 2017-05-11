@@ -33,7 +33,7 @@ class Command(models.Model):
     bot = models.ForeignKey(Bot)
     room = models.ForeignKey(Room)
     pattern = models.CharField(max_length=400, help_text='^!command$')
-    response = models.CharField(max_length=1024)
+    response = models.CharField(max_length=1024, help_text='todo: determine max message length')
     extra = JSONField(blank=True, null=True)
 
     objects = CommandQuerySet.as_manager()
